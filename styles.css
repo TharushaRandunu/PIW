@@ -1,0 +1,142 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #5C4033;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 19px 20px;
+  display: block;
+}
+.navbar a:hover {
+    
+    color: #ca6015; /* Slightly lighter text on hover */
+  }
+  .social-link {
+    position: absolute; /* Ensures it’s positioned relative to the parent or viewport */
+         /* Adjusts the vertical position */
+    right: 10px;        /* Aligns it to the right corner */
+  }
+  
+  .social-link img {
+    vertical-align: middle; /* Align the image with text links */
+  }
+  
+
+/* About Section */
+.about {
+  text-align: center;
+  padding: 50px;
+  /* background-color: #ddd;*/
+  background-color: #ddd;
+}
+
+/* Slider Section */
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides img {
+  width: 100%;
+  display: block;
+  animation: slide 15s infinite;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+/* Gallery Section */
+.gallery {
+  padding: 50px;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 30%;
+  border-radius: 8px;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 50px;
+    background-color: #eee;
+    text-align: center;
+  }
+  
+  .review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensures the form takes full width of its parent container */
+    max-width: 400px; /* Optional: Restricts the form width for better appearance */
+    margin: 0 auto; /* Centers the form horizontally */
+  }
+  
+  .review-form input, 
+  .review-form textarea, 
+  .review-form button {
+    width: 100%; /* Ensure inputs are aligned to match form width */
+    margin: 10px 0; 
+    padding: 10px;
+    box-sizing: border-box; /* Ensures padding doesn't affect element width */
+  }
+  
+  .review-form button {
+    background-color: #5C4033;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .review-form button:hover {
+    background-color: #555; /* Lighter background on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 50px;
+  background-color: #ddd;
+}
+
+/* Footer */
+.footer {
+  background-color: #5C4033;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
